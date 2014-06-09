@@ -9,8 +9,6 @@ Execution
 
 3. Run `source("run_analysis.R")`.
 
-4. The following files will be created in your working directory:
-⋅⋅* `merged_data.txt`
-⋅⋅* `tidy_data.txt`
+4. The following files will be created in your working directory: `merged_data.txt` and `tidy_data.txt`
 
 5. Use `data <- read.table("tidy_data.txt")` to read the tidy data set. This is a 180x68 data frame.
