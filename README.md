@@ -1,14 +1,14 @@
-GettingandCleaningData
+Getting and Cleaning Data
 ======================
 
-Execution
---------------------------------------
 1. Unzip the [data] (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) in your working directory. You will have a folder called `UCI HAR Dataset`. Rename the folder to `data`.
 
 2. Put `run_analysis.R` in your working directory.
 
 3. Run `source("run_analysis.R")`.
 
-4. The following files will be created in your working directory: `merged_data.txt` and `tidy_data.txt`
+4. The following files will be created in the data folder: 
+ - `merged_data.txt`: the training and test sets merged into one data set, containing only the measurements on the mean and standard deviation for each measurement. Dimension: 10299x68
+ - `tidy_data.txt`: data set with the average of each variable for each activity and each subject. Dimension: 180x68
 
-5. Use `data <- read.table("tidy_data.txt")` to read the tidy data set. This is a 180x68 data frame.
+5. Use `read.table("./data/merged_data.txt, header=TRUE")` and `read.table("./data/tidy_data.txt", header=TRUE)` to read the data sets. 

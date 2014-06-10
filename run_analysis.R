@@ -38,13 +38,13 @@ colnames(merged_data) <- c("Subject", "Activity", as.character(features[wanted_f
 colnames(merged_data) <- gsub("\\(\\)", "", colnames(merged_data)) #remove ()
 colnames(merged_data) <- gsub("-", "_", colnames(merged_data)) #change - to _
 
-#Create a txt file for the merged data
-write.table(merged_data, "merged_data.txt")
+#Create a txt file for the merged data in the data folder
+write.table(merged_data, "./data/merged_data.txt", row.names=FALSE))
 
 
 #Create a second, independent tidy data set with the average of each variable for each activity and each subject.
 data_melt <- melt(merged_data, id=c("Subject", "Activity"))
 tidy_data <- dcast(data_melt, Subject + Activity  ~ variable, mean)
 
-#Create a txt file for the tidy data
-write.table(tidy_data, "tidy_data.txt")
+#Create a txt file for the tidy data in the data folder
+write.table(tidy_data, "./data/tidy_data.txt", row.names=FALSE)
