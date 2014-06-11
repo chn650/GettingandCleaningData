@@ -26,6 +26,7 @@ measurements <- measurements[,wanted_features]
 #Read activity labels
 activity_labels <- read.table("./data/activity_labels.txt")
 activity_labels[,2] <- tolower(as.character(activity_labels[,2])) #change from upper to lower case
+activity_labels[,2] <- gsub("_", "", activity_labels[,2]) #remove _
 
 #Link the class labels with their activity name
 activities <- activity_labels[activities[,1],2]
@@ -34,9 +35,8 @@ activities <- activity_labels[activities[,1],2]
 merged_data <- cbind(subjects, activities, measurements)
 
 #Label the data set with descriptive variable names.
-colnames(merged_data) <- c("Subject", "Activity", as.character(features[wanted_features,][,2]))
-colnames(merged_data) <- gsub("\\(\\)", "", colnames(merged_data)) #remove ()
-colnames(merged_data) <- gsub("-", "_", colnames(merged_data)) #change - to _
+names(merged_data) <- c("subject", "activity", tolower(as.character(features[wanted_features,][,2])))
+names(merged_data) <- gsub("-|\\(\\)", "", names(merged_data)) #remove - and ()
 
 #Create a txt file for the merged data in the data folder
 write.table(merged_data, "./data/merged_data.txt", row.names=FALSE))

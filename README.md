@@ -7,8 +7,8 @@ Getting and Cleaning Data
 
 3. Run `source("run_analysis.R")`.
 
-4. The following files will be created in the data folder: 
+4. The following files will be created in the `data` folder: 
  - `merged_data.txt`: the training and test sets merged into one data set, containing only the measurements on the mean and standard deviation for each measurement. Dimension: 10299x68
  - `tidy_data.txt`: data set with the average of each variable for each activity and each subject. Dimension: 180x68
 
-5. Use `read.table("./data/merged_data.txt, header=TRUE")` and `read.table("./data/tidy_data.txt", header=TRUE)` to read the data sets. 
+5. Use `read.table("./data/merged_data.txt"", header=TRUE)` and `read.table("./data/tidy_data.txt", header=TRUE)` to read the data sets. 
