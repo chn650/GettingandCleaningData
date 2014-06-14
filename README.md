@@ -1,6 +1,9 @@
 Getting and Cleaning Data
 ======================
 
+
+How to execute the R script
+-----------------------------
 1. Unzip the [data] (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) in your working directory. You will have a folder called `UCI HAR Dataset`. Rename the folder to `data`.
 
 2. Put `run_analysis.R` in your working directory.

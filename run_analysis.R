@@ -1,5 +1,5 @@
 #Load necessary packages
-library("reshape2")
+require("reshape2")
 
 
 #Load training and testing data
