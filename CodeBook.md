@@ -9,6 +9,7 @@ The `run_analysis.R` file will create two files:
  - `merged_data.txt`: the training and test sets merged into one data set, containing only the measurements on the mean and standard deviation for each measurement. Dimension: 10299x68
  - `tidy_data.txt`: data set with the average of each variable for each activity and each subject. Dimension: 180x68
  
+ 
 
 Transformation steps
 ---------------------
