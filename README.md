@@ -1,5 +1,10 @@
 Getting and Cleaning Data
 ======================
+The goal of this project is to prepare tidy data that can be used for later analysis.
+
+This repo contains:
+* `run_analysis.R`: R script for creating the tidy data
+* `CodeBook.md`: code book that describes the performed steps to clean up the data
 
 
 How to execute the R script

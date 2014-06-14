@@ -46,7 +46,7 @@ For the `tidy_data.txt`:
 
 Description Variables 
 ---------------------
-subject: range from 1 to 30
+subject: ranges from 1 to 30
 
 activity: laying, sitting, standing, walking, walking downstairs, walking upstairs
 
