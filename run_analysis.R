@@ -39,12 +39,12 @@ names(merged_data) <- c("subject", "activity", tolower(as.character(features[wan
 names(merged_data) <- gsub("-|\\(\\)", "", names(merged_data)) #remove - and ()
 
 #Create a txt file for the merged data in the data folder
-write.table(merged_data, "./data/merged_data.txt", row.names=FALSE))
+write.table(merged_data, "./data/merged_data.txt", row.names=FALSE)
 
 
 #Create a second, independent tidy data set with the average of each variable for each activity and each subject.
-data_melt <- melt(merged_data, id=c("Subject", "Activity"))
-tidy_data <- dcast(data_melt, Subject + Activity  ~ variable, mean)
+data_melt <- melt(merged_data, id=c("subject", "activity"))
+tidy_data <- dcast(data_melt, subject + activity  ~ variable, mean)
 
 #Create a txt file for the tidy data in the data folder
 write.table(tidy_data, "./data/tidy_data.txt", row.names=FALSE)
