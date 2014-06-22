@@ -2,7 +2,7 @@ Code Book
 ======================
 
 
-Description Data
+Data Description 
 ------------------
 Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living while carrying a waist-mounted smartphone with embedded inertial sensors.[1]
 
@@ -47,7 +47,7 @@ For the `tidy_data.txt`:
 
 
 
-Description Variables 
+Variable Description 
 ---------------------
 subject: the numbers 1 to 30 represent the individuals that participated in the study
 
