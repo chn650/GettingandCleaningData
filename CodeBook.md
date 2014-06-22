@@ -1,20 +1,19 @@
 Code Book
 ======================
 
+
+Description Data
+------------------
 Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living while carrying a waist-mounted smartphone with embedded inertial sensors.[1]
 
 Original data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 For more information about the study: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-
-The `run_analysis.R` file will create two files:
- - `merged_data.txt`: the training and test sets merged into one data set, containing only the measurements on the mean and standard deviation for each measurement. Dimension: 10299x68
- - `tidy_data.txt`: data set with the average of each variable for each activity and each subject. Dimension: 180x68
  
  
 
-Transformation steps
+Transformation Steps
 ---------------------
 For the `merged_data.txt`:
 

@@ -4,7 +4,7 @@ The goal of this project is to prepare tidy data that can be used for later anal
 
 This repo contains:
 * `run_analysis.R`: R script for creating the tidy data
-* `CodeBook.md`: code book that describes the performed steps to clean up the data
+* `CodeBook.md`: code book that describes the data, the variables and the performed steps to clean up the data
 
 
 How to execute the R script
